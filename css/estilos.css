@@ -1,0 +1,187 @@
+* {
+    margin: 0px;
+    padding: 0;  
+    list-style: none;
+    box-sizing: border-box;
+    background-color: rgb(169, 222, 255);
+    font-family: 'Lobster', cursive;
+
+}
+
+.grilla{
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer";
+    padding: 5vh;
+}
+.nav{
+    border-style: double dotted;
+}
+.header{
+     display: grid;
+     background-color: rgb(169, 222, 255);
+     grid-area: header;
+     position: relative;
+     font-size: 40px;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 1fr;
+     justify-items: center;
+     z-index: 1;
+     box-sizing: border-box;
+     height: 350px;
+    
+}
+
+.main{
+    display: grid;
+    background-color: rgb(131, 191, 228);
+    grid-area: main;
+    margin: 10px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.mainContacto{
+    display: grid;
+    height: 70vh;
+    justify-items: center;
+}
+.servicio{
+    margin: 1vh;
+}
+.footer{
+    display: grid;
+    background-color: rgb(131, 191, 228);
+    grid-area: footer;
+    border-style: double;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh;
+    padding: 2vh;
+
+}
+
+body {
+    font-family: 'Lobster', cursive;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+.img {
+    display: grid;
+    margin: 10px;
+    position: relative;
+    padding: 10px;
+    border-style: dotted;
+}
+.mainImg{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+main {
+    padding: 50px;
+    background-color: rgb(169, 222, 255);
+}
+
+h1 {
+    background-color: rgb(169, 222, 255);
+}
+
+h2 {
+    background-color: rgb(169, 222, 255);
+}
+
+p {
+    background-color: rgb(169, 222, 255);
+    font-weight: bolder;
+    color: black;
+}
+
+td {
+    color: black;
+    text-align: center;
+}
+
+table tr td ol li {
+    color: black;
+    text-align: center;
+}
+
+main table {
+    margin-left: 360px;
+}
+
+.formContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 50%;
+    height: 50vh;
+    margin: 1px auto;
+    border: none;
+}
+
+.formContainer__legend {
+    display: grid;
+    font-size: 50px;
+    border: solid 1px turquoise;
+    padding: 5px;
+}
+
+.formContainer__legend-2 {
+    display: grid;
+    align-items: center;
+    border: none;
+
+}
+
+.formContainer__submit {
+    display: grid;
+    font-size: 25px;
+    font-style: oblique;
+    background-color: cadetblue;
+    border-radius: 5px;
+    cursor: pointer;
+    
+
+}
+.gridPadre{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+@media(max-width:425px){
+    .header{
+        height: 40vh;
+        text-align: center;
+    }
+    .img{
+    height: 30vh;
+}
+    .gridPadre{
+        height: 5vh;
+        text-align: center;
+    }
+    .main{
+        text-align: center;
+        padding-top: 70vh;
+        
+    }
+    .mainImg{
+        display: none;
+     }
+     .servicio{
+         align-content: center;
+         weight:7vh;
+     }
+}
